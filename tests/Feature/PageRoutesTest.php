@@ -14,6 +14,9 @@ test('route buku returns success and contains navbar and heading 1', function ()
     $response->assertStatus(200);
     $response->assertSee('Perpusda Sleman');
     $response->assertSee('Ini adalah buku');
+    $response->assertSee('Laskar Pelangi');
+    $response->assertSee('Bumi Manusia');
+    $response->assertSee('Filosofi Teras');
 });
 
 test('route tentang-kami returns success and contains navbar and heading 1', function () {
